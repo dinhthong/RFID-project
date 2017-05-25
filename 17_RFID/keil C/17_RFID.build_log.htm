@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: thong dinh, hcmut, LIC=21EY8-3I0B2-2Y5V0-BKQNH-KRD7D-72XKV
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+G:\Google Drive\studying\ARM MCU\RFID project\rfid works ne\17_RFID final\17_RFID\keil C\17_RFID.uvprojx
+Project File Date:  04/02/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h(94): warning:  #1215-D: #warning directive: "dinh nghia STM32F40_41xxx trong file stmf4xx.h"
+  #warning "dinh nghia STM32F40_41xxx trong file stmf4xx.h"
+..\my_delay.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\main.c(30): warning:  #223-D: function "printf" declared implicitly
+  		 printf("DEMO RFID\r\n");
+..\main.c(87): warning:  #223-D: function "printf" declared implicitly
+          if((k%4) == 3	)			printf("block  %d ( trailer) \r\n", k);
+..\main.c(88): warning:  #223-D: function "printf" declared implicitly
+  				else printf("block %d\r\n", k);	
+..\main.c(92): warning:  #223-D: function "printf" declared implicitly
+  									printf("hex= ");
+..\main.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=9584 RO-data=488 RW-data=72 ZI-data=1656  
+".\17_RFID.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
