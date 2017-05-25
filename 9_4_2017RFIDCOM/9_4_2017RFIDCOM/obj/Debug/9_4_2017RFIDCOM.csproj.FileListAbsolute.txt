@@ -1,0 +1,9 @@
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\bin\Debug\9_4_2017RFIDCOM.exe.config
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\obj\Debug\_9_4_2017RFIDCOM.Form1.resources
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\obj\Debug\_9_4_2017RFIDCOM.Properties.Resources.resources
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\obj\Debug\9_4_2017RFIDCOM.csproj.GenerateResource.Cache
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\obj\Debug\9_4_2017RFIDCOM.csprojResolveAssemblyReference.cache
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\bin\Debug\9_4_2017RFIDCOM.exe
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\bin\Debug\9_4_2017RFIDCOM.pdb
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\obj\Debug\9_4_2017RFIDCOM.exe
+c:\users\nguye\documents\visual studio 2015\Projects\9_4_2017RFIDCOM\9_4_2017RFIDCOM\obj\Debug\9_4_2017RFIDCOM.pdb

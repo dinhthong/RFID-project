@@ -1,0 +1,5 @@
+﻿ALTER PROCEDURE tb_loadAll
+
+AS
+	SELECT * from BKU
+RETURN 0
