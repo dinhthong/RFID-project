@@ -21,7 +21,7 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
 Dialog DLL:      TCM.DLL V1.27.0.0
  
 <h2>Project:</h2>
-G:\Google Drive\studying\ARM MCU\RFID project\rfid works ne\17_RFID final\17_RFID\keil C\17_RFID.uvprojx
+C:\Users\nguye\Desktop\_RFID project\17_RFID\keil C\17_RFID.uvprojx
 Project File Date:  04/02/2017
 
 <h2>Output:</h2>
@@ -32,18 +32,34 @@ compiling main.c...
   #warning "dinh nghia STM32F40_41xxx trong file stmf4xx.h"
 ..\my_delay.h(10): warning:  #1-D: last line of file ends without a newline
   #endif
-..\main.c(30): warning:  #223-D: function "printf" declared implicitly
-  		 printf("DEMO RFID\r\n");
-..\main.c(87): warning:  #223-D: function "printf" declared implicitly
+..\main.c(26): warning:  #223-D: function "printf" declared implicitly
+  		printf("CHUONG TRINH RFID\r\n");
+..\main.c(77): warning:  #223-D: function "printf" declared implicitly
           if((k%4) == 3	)			printf("block  %d ( trailer) \r\n", k);
-..\main.c(88): warning:  #223-D: function "printf" declared implicitly
+..\main.c(78): warning:  #223-D: function "printf" declared implicitly
   				else printf("block %d\r\n", k);	
-..\main.c(92): warning:  #223-D: function "printf" declared implicitly
+..\main.c(82): warning:  #223-D: function "printf" declared implicitly
   									printf("hex= ");
 ..\main.c: 6 warnings, 0 errors
+compiling mfrc522.c...
+..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h(94): warning:  #1215-D: #warning directive: "dinh nghia STM32F40_41xxx trong file stmf4xx.h"
+  #warning "dinh nghia STM32F40_41xxx trong file stmf4xx.h"
+..\my_delay.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\mfrc522.c(85): warning:  #177-D: variable "val"  was declared but never referenced
+  	uint32_t val;
+..\mfrc522.c(428): warning:  #550-D: variable "status"  was set but never used
+      uint8_t status;
+..\mfrc522.c(582): warning:  #223-D: function "printf" declared implicitly
+          printf(" ");
+..\mfrc522.c(584): warning:  #223-D: function "printf" declared implicitly
+       printf("%02X \x00", (uint8_t)(*(buffer + i)));
+..\mfrc522.c(580): warning:  #177-D: variable "text"  was declared but never referenced
+       uint8_t text[4];
+..\mfrc522.c: 7 warnings, 0 errors
 linking...
-Program Size: Code=9584 RO-data=488 RW-data=72 ZI-data=1656  
-".\17_RFID.axf" - 0 Error(s), 6 Warning(s).
+Program Size: Code=9572 RO-data=488 RW-data=72 ZI-data=1656  
+".\17_RFID.axf" - 0 Error(s), 13 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -61,7 +77,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.0.1
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

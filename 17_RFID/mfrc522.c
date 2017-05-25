@@ -62,11 +62,8 @@ void MF522_init(void)
   /* Deselect : Chip Select high */
   //disableChip;
 	
-	////
-	///
 	/* Enable the SPI periph */
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE);
-
+	  RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE);
     /* SPI configuration -------------------------------------------------------*/
     SPI_I2S_DeInit(SPI1);
     SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
@@ -79,10 +76,8 @@ void MF522_init(void)
     SPI_InitStructure.SPI_CRCPolynomial = 7;
     SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
     SPI_Init(SPI1, &SPI_InitStructure);
-
     /* Enable SPI1  */
     SPI_Cmd(SPI1, ENABLE);
-
 }
 
 unsigned char SPI_transfer(unsigned char data){

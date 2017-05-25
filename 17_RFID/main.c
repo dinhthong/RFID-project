@@ -3,7 +3,7 @@
 #include "my_delay.h"
 
 void Read64Block( void);
-void UART_Init(void);
+void UARTmain_Init(void);
 uint8_t status; uint8_t g_ucTempbuf[20];  bool flag_loop=0;
 uint8_t defaultKeyA[16] = { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 		0x60,0xc8,0x11,0x7c	/* My card on my keys . Tai sao lai la tung  doan du lieu ma hexa
 		Boi vi du lieu trong buffer la 8 bit. Hinh nhu moi lan so sanh voi moi register (FIFO buffer)*/
 	};
-    UART_Init();
+    UARTmain_Init();
 		 //cho phep USART2 hoat dong
 		MF522_init();
 		delay_init(168);
@@ -96,7 +96,7 @@ void Read64Block( void)
        }
 }
 
-void UART_Init(void)
+void UARTmain_Init(void)
 {
 		GPIO_InitTypeDef GPIO_InitStruct;
     USART_InitTypeDef USART_InitStruct;
