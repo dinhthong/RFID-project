@@ -7,3 +7,6 @@ C:\Users\nguye\Documents\Visual Studio 2015\Projects\4_5_2017Cswithdatabaserfid\
 C:\Users\nguye\Documents\Visual Studio 2015\Projects\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.csproj.GenerateResource.Cache
 C:\Users\nguye\Documents\Visual Studio 2015\Projects\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.exe
 C:\Users\nguye\Documents\Visual Studio 2015\Projects\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.pdb
+E:\Google Drive\synMYCOMPUTER\studying\STM32\My All Projects\RFID project\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\bin\Debug\4_5_2017Cswithdatabaserfid.exe.config
+E:\Google Drive\synMYCOMPUTER\studying\STM32\My All Projects\RFID project\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.exe
+E:\Google Drive\synMYCOMPUTER\studying\STM32\My All Projects\RFID project\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.pdb
