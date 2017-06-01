@@ -10,3 +10,12 @@ C:\Users\nguye\Documents\Visual Studio 2015\Projects\4_5_2017Cswithdatabaserfid\
 E:\Google Drive\synMYCOMPUTER\studying\STM32\My All Projects\RFID project\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\bin\Debug\4_5_2017Cswithdatabaserfid.exe.config
 E:\Google Drive\synMYCOMPUTER\studying\STM32\My All Projects\RFID project\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.exe
 E:\Google Drive\synMYCOMPUTER\studying\STM32\My All Projects\RFID project\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.pdb
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\bin\Debug\4_5_2017Cswithdatabaserfid.exe.config
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.exe
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.pdb
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\bin\Debug\4_5_2017Cswithdatabaserfid.exe
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\bin\Debug\4_5_2017Cswithdatabaserfid.pdb
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.csprojResolveAssemblyReference.cache
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\_4_5_2017Cswithdatabaserfid.Form1.resources
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\_4_5_2017Cswithdatabaserfid.Properties.Resources.resources
+C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.csproj.GenerateResource.Cache
