@@ -1,4 +1,4 @@
-.\my_delay.o: ..\my_delay.c
+.\my_delay.o: ..\Src\my_delay.c
 .\my_delay.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\my_delay.o: ..\Libraries\CMSIS\Include\core_cm4.h
 .\my_delay.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -6,7 +6,7 @@
 .\my_delay.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
 .\my_delay.o: ..\Libraries\CMSIS\Include\core_cmSimd.h
 .\my_delay.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
-.\my_delay.o: ..\..\17_RFID\stm32f4xx_conf.h
+.\my_delay.o: ..\Inc\stm32f4xx_conf.h
 .\my_delay.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
 .\my_delay.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\my_delay.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h

@@ -1,9 +1,6 @@
+#include "mfrc522.h" //this library includes the stm32f4xx.h
+#include "my_delay.h" 
 
-#include "mfrc522.h" //thís library includes the stm32f4xx.h
-#include "my_delay.h" //the delay function is used in this c file
-
-/*why do we need to define? For instance if we need enable SPI communication between the MFRC522 and STM32F407
-which equivalent to Reset the Chip Select pin. We simply use MF522_CS_ENABLE */
 #define MAXRLEN    18
 
 #define MF522_PORT_RST     GPIOA
@@ -13,22 +10,18 @@ which equivalent to Reset the Chip Select pin. We simply use MF522_CS_ENABLE */
 
 #define MF522_PORT_CS      GPIOA
 #define MF522_PIN_CS       GPIO_Pin_2
-#define MF522_CS_ENABLE    GPIO_ResetBits(MF522_PORT_CS,MF522_PIN_CS);
+#define MF522_CS_ENABLE    GPIO_ResetBits(MF522_PORT_CS,MF522_PIN_CS); //SDA is CS pin
 #define MF522_CS_DISABLE   GPIO_SetBits(MF522_PORT_CS,MF522_PIN_CS);
 
-//Initilize the communication between the MFRC522 and STM32F407VG
+//Initilize the pinouts. GPIO for SPI AF
 void MF522_init(void)
 {
-	//declare struct variables: GPIO and SPI
 	GPIO_InitTypeDef GPIO_InitStructure;
 	SPI_InitTypeDef   SPI_InitStructure;
 
 	//SDA: PA2 | SCK:PA5 | MOSI: PA7 | MISO: PA6 | RST: PA3
 
-  /* Enable SCK, MOSI and MISO GPIO clocks */
-  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
-
-  /* Enable CS  GPIO clock */
+  /* Enable SCK, MOSI and MISO GPIO clocks and CS  GPIO clock*/
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
 
   GPIO_PinAFConfig(GPIOA, GPIO_PinSource5, GPIO_AF_SPI1);
@@ -59,12 +52,9 @@ void MF522_init(void)
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
   GPIO_Init(GPIOA, &GPIO_InitStructure);
 
-  /* Deselect : Chip Select high */
-  //disableChip;
-	
 	/* Enable the SPI periph */
 	  RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE);
-    /* SPI configuration -------------------------------------------------------*/
+  /* SPI configuration -------------------------------------------------------*/
     SPI_I2S_DeInit(SPI1);
     SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
     SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
@@ -83,6 +73,7 @@ void MF522_init(void)
 unsigned char SPI_transfer(unsigned char data){
 
 	uint32_t val;
+	//This function is just exactly the same as void 'SPI_I2S_SendData(SPI_TypeDef* SPIx, uint16_t Data)'
 	SPI1->DR = data; // write data to be transmitted to the SPI data register
 	while( !(SPI1->SR & SPI_I2S_FLAG_TXE) ); // wait until transmit complete
 	while( !(SPI1->SR & SPI_I2S_FLAG_RXNE) ); // wait until receive complete
@@ -90,36 +81,34 @@ unsigned char SPI_transfer(unsigned char data){
 	return SPI1->DR; // return received data from SPI data register
 }
 
-
-
 uint8_t MFRC522_Reset(void)
 {
-	  MF522_CS_DISABLE;
-    delay_us(8000);
-	  MF522_RST_RESET;
-    delay_us(1000);
-	  MF522_RST_SET;
-    delay_us(1000);
-    MFRC522_WriteRegister(COMMAND_REGISTER,MFRC522_RESETPHASE);
-    delay_us(1000);
+	MF522_CS_DISABLE;
+  delay_us(8000);
+	MF522_RST_RESET;
+  delay_us(1000);
+	MF522_RST_SET;
+  delay_us(1000);
+  MFRC522_WriteRegister(COMMAND_REGISTER,MFRC522_RESETPHASE);
+  delay_us(1000);
     
-    MFRC522_WriteRegister(MODE_REGISTER,0x3D);        
-    MFRC522_WriteRegister(TIMER_RELOAD_L_REGISTER,30);           
-    MFRC522_WriteRegister(TIMER_RELOAD_H_REGISTER,0);
-    MFRC522_WriteRegister(TMODE_REGISTER,0x8D); //Tauto=1; f(Timer) = 6.78MHz/TPreScaler
-    MFRC522_WriteRegister(TIMER_PRESCALER_REGISTER,0x3E);
-    MFRC522_WriteRegister(TX_ASK_REGISTER,0x40);
+  MFRC522_WriteRegister(MODE_REGISTER,0x3D);        
+  MFRC522_WriteRegister(TIMER_RELOAD_L_REGISTER,30);           
+  MFRC522_WriteRegister(TIMER_RELOAD_H_REGISTER,0);
+  MFRC522_WriteRegister(TMODE_REGISTER,0x8D); //Tauto=1; f(Timer) = 6.78MHz/TPreScaler
+  MFRC522_WriteRegister(TIMER_PRESCALER_REGISTER,0x3E);
+  MFRC522_WriteRegister(TX_ASK_REGISTER,0x40);
    
-    return MI_OK;
+  return MI_OK;
 }
 uint8_t MFRC522_ReadRegister(uint8_t Address)
 {
- uint8_t val;
+  uint8_t val;
 	MF522_CS_ENABLE;
 	delay_us(5);
 	//address format:1XXXXXX0
 	SPI_transfer(((Address<<1)&0x7E) | 0x80);
-	val =SPI_transfer(0x00);
+	val = SPI_transfer(0x00);
 	MF522_CS_DISABLE;
 	delay_us(5);
 	return val;
@@ -133,19 +122,6 @@ void MFRC522_WriteRegister(uint8_t Address, uint8_t value)
 	SPI_transfer(value);
 	MF522_CS_DISABLE;
 	delay_us(5);
-}
-/*MFRC522 compare
-@brief 
-//kho hieu o day tai sao truyen pointer? because we want to pass an array
-*/
-uint8_t TM_MFRC522_Compare(uint8_t* CardID, uint8_t* CompareID) {
-	uint8_t i;
-	for (i = 0; i < 5; i++) {
-		if (CardID[i] != CompareID[i]) {
-			return MI_ERR;
-		}
-	}
-	return MI_OK;
 }
 
 /*******************************************************************************
@@ -165,8 +141,6 @@ uint8_t MFRC522_Request(uint8_t req_code,uint8_t* pTagType)
    ClearBitMask(STATUS2_REGISTER,0x08);
    MFRC522_WriteRegister(BIT_FRAMING_REGISTER,0x07);
    SetBitMask(TX_CONTROL_REGISTER,0x03);
-   
-    
    Buffer[0] = req_code;
    status = MFRC522_ComMF522(MFRC522_TRANSCEIVE,Buffer,1,Buffer,&Length);
    if ((status == MI_OK) && (Length == 0x10))
@@ -469,11 +443,7 @@ void ClearBitMask(uint8_t reg,uint8_t mask)
     tmp = MFRC522_ReadRegister(reg);
     MFRC522_WriteRegister(reg, tmp & (~mask));  // clear bit mask
 } 
-uint8_t MFRC522_ComMF522(uint8_t  Command, 
-                         uint8_t  *pInData, 
-                         uint8_t  InLenByte,
-                         uint8_t  *pOutData, 
-                         uint16_t *pOutLenBit)
+uint8_t MFRC522_ComMF522(uint8_t  Command, uint8_t  *pInData, uint8_t  InLenByte,uint8_t  *pOutData, uint16_t *pOutLenBit)
 {
     uint8_t status = MI_ERR;
     uint8_t irqEn   = 0x00;

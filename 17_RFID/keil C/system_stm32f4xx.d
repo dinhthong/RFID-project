@@ -6,7 +6,7 @@
 .\system_stm32f4xx.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
 .\system_stm32f4xx.o: ..\Libraries\CMSIS\Include\core_cmSimd.h
 .\system_stm32f4xx.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
-.\system_stm32f4xx.o: ..\..\17_RFID\stm32f4xx_conf.h
+.\system_stm32f4xx.o: ..\Inc\stm32f4xx_conf.h
 .\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
 .\system_stm32f4xx.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\system_stm32f4xx.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h

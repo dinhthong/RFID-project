@@ -1,5 +1,5 @@
-.\mfrc522.o: ..\mfrc522.c
-.\mfrc522.o: ..\mfrc522.h
+.\mfrc522.o: ..\Src\mfrc522.c
+.\mfrc522.o: ..\Inc\mfrc522.h
 .\mfrc522.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\mfrc522.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\mfrc522.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
@@ -8,7 +8,7 @@
 .\mfrc522.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
 .\mfrc522.o: ..\Libraries\CMSIS\Include\core_cmSimd.h
 .\mfrc522.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
-.\mfrc522.o: ..\..\17_RFID\stm32f4xx_conf.h
+.\mfrc522.o: ..\Inc\stm32f4xx_conf.h
 .\mfrc522.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
 .\mfrc522.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\mfrc522.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h
@@ -36,4 +36,4 @@
 .\mfrc522.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
 .\mfrc522.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
 .\mfrc522.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
-.\mfrc522.o: ..\my_delay.h
+.\mfrc522.o: ..\Inc\my_delay.h

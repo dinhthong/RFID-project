@@ -1,4 +1,4 @@
-.\my_printf.o: ..\my_printf.c
+.\my_printf.o: ..\Src\my_printf.c
 .\my_printf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\my_printf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
 .\my_printf.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\rt_misc.h
@@ -10,7 +10,7 @@
 .\my_printf.o: ..\Libraries\CMSIS\Include\core_cmFunc.h
 .\my_printf.o: ..\Libraries\CMSIS\Include\core_cmSimd.h
 .\my_printf.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
-.\my_printf.o: ..\..\17_RFID\stm32f4xx_conf.h
+.\my_printf.o: ..\Inc\stm32f4xx_conf.h
 .\my_printf.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h
 .\my_printf.o: ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\my_printf.o: ..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h

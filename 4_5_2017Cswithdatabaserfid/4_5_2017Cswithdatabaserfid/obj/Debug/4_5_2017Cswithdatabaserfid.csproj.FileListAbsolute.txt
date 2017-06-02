@@ -19,3 +19,6 @@ C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswi
 C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\_4_5_2017Cswithdatabaserfid.Form1.resources
 C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\_4_5_2017Cswithdatabaserfid.Properties.Resources.resources
 C:\Users\nguye\Desktop\main RFID project\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.csproj.GenerateResource.Cache
+C:\Users\nguye\Desktop\mainRFIDproject\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\bin\Debug\4_5_2017Cswithdatabaserfid.exe.config
+C:\Users\nguye\Desktop\mainRFIDproject\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.exe
+C:\Users\nguye\Desktop\mainRFIDproject\4_5_2017Cswithdatabaserfid\4_5_2017Cswithdatabaserfid\obj\Debug\4_5_2017Cswithdatabaserfid.pdb

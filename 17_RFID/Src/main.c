@@ -1,17 +1,15 @@
 #include "stm32f4xx.h"
 #include "mfrc522.h"
 #include "my_delay.h"
-
+uint8_t CompareID(uint8_t* CardID, uint8_t* CompareID);
 void Read64Block( void);
 void UARTmain_Init(void);
 uint8_t status; uint8_t g_ucTempbuf[20];  bool flag_loop=0;
 uint8_t defaultKeyA[16] = { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
 int main(void)
 {
-	uint8_t MyID[5] = {
-		0x60,0xc8,0x11,0x7c	/* My card on my keys . Tai sao lai la tung  doan du lieu ma hexa
-		Boi vi du lieu trong buffer la 8 bit. Hinh nhu moi lan so sanh voi moi register (FIFO buffer)*/
-	};
+	//4 bytes = 32 bits
+	uint8_t MyID[5] = {0x60,0xc8,0x11,0x7c};
     UARTmain_Init();
 		 //cho phep USART2 hoat dong
 		MF522_init();
@@ -22,37 +20,53 @@ int main(void)
     MFRC522_AntennaOff(); 
 	  delay_ms(10);
     MFRC522_AntennaOn();  
-		delay_ms(3000);
+		delay_ms(300);
 		printf("CHUONG TRINH RFID\r\n");
-		 //Read64Block();
+	 //Read64Block();
 	while(1)
 	{
 		status = MFRC522_Request(PICC_REQALL, g_ucTempbuf);
-         if (status != MI_OK)
-         {  flag_loop=0;  
-           continue;
-         }
+    if (status != MI_OK)
+    {  
+		  flag_loop=0;  
+      continue;
+    }
 		status = MFRC522_Anticoll(g_ucTempbuf);
-         if (status != MI_OK)
-         {  flag_loop=0;  
+    if (status != MI_OK)
+         {  
+					 flag_loop=0;  
            continue;
          }
-				 if(flag_loop==1) 
+	  if(flag_loop==1) 
         {
 				 MFRC522_Halt();	
-				continue;
+				 continue;
 				}
-				 flag_loop=1;
-			  printf("\n UID=%x:%x:%x:%x\r\n",g_ucTempbuf[0],g_ucTempbuf[1],g_ucTempbuf[2],g_ucTempbuf[3] );
-			  MFRC522_Halt();
-				if (TM_MFRC522_Compare(g_ucTempbuf,MyID) == MI_OK) {
-				printf("Welcome! Card is correct\n");
-			} else {
+		flag_loop=1;
+		printf("\n UID=%x:%x:%x:%x\r\n",g_ucTempbuf[0],g_ucTempbuf[1],g_ucTempbuf[2],g_ucTempbuf[3] );
+		MFRC522_Halt();
+	  if (CompareID(g_ucTempbuf,MyID) == MI_OK) 
+			{
+		printf("Welcome! Card is correct\n");
+			} 
+		else 
+			{
 				printf(" Card is NOT correct\n");
 			}
 		//	printf("Read 64 sector\r\n");
      //  Read64Block();			
 	}
+}
+uint8_t CompareID(uint8_t* CardID, uint8_t* CompareID) 
+{
+	uint8_t i;
+	for (i = 0; i < 5; i++) {
+		if (CardID[i] != CompareID[i]) 
+			{
+			return MI_ERR;
+		  }
+	}
+	return MI_OK;
 }
 
 void Read64Block( void)
@@ -101,8 +115,10 @@ void UARTmain_Init(void)
 		GPIO_InitTypeDef GPIO_InitStruct;
     USART_InitTypeDef USART_InitStruct;
 	  RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);
+	
     //cho phep clock toi chan Rx Tx
     RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+	
     //cau hinh chan Rx Tx PD5 PD6 chan con lai vao GND
     GPIO_InitStruct.GPIO_Mode=GPIO_Mode_AF;
     GPIO_InitStruct.GPIO_Pin=GPIO_Pin_5|GPIO_Pin_6;
@@ -110,9 +126,11 @@ void UARTmain_Init(void)
     GPIO_InitStruct.GPIO_OType=GPIO_OType_PP;
     GPIO_InitStruct.GPIO_PuPd=GPIO_PuPd_UP;
     GPIO_Init(GPIOD, &GPIO_InitStruct);
+	
     //gan chan Rx Tx
     GPIO_PinAFConfig(GPIOD, GPIO_PinSource5, GPIO_AF_USART2);
     GPIO_PinAFConfig(GPIOD, GPIO_PinSource6, GPIO_AF_USART2);
+	
     //cau hinh cho USART2
     USART_InitStruct.USART_BaudRate=115200;
     USART_InitStruct.USART_HardwareFlowControl=USART_HardwareFlowControl_None;

@@ -330,12 +330,11 @@
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
             <v6WtE>0</v6WtE>
-            <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\17_RFID;..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\Libraries\CMSIS\Include</IncludePath>
+              <IncludePath>..\..\17_RFID;..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\Libraries\CMSIS\Include;..\Inc;..\Src</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -397,22 +396,22 @@
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\main.c</FilePath>
+              <FilePath>..\Src\main.c</FilePath>
             </File>
             <File>
               <FileName>mfrc522.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mfrc522.c</FilePath>
-            </File>
-            <File>
-              <FileName>my_printf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\my_printf.c</FilePath>
+              <FilePath>..\Src\mfrc522.c</FilePath>
             </File>
             <File>
               <FileName>my_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\my_delay.c</FilePath>
+              <FilePath>..\Src\my_delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>my_printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\my_printf.c</FilePath>
             </File>
           </Files>
         </Group>

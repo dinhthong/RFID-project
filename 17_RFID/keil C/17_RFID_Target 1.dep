@@ -1,5 +1,5 @@
 Dependencies for Project '17_RFID', Target 'Target 1': (DO NOT MODIFY !)
-F (..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c)(0x57C50072)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\system_stm32f4xx.o --omf_browse .\system_stm32f4xx.crf --depend .\system_stm32f4xx.d)
+F (..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c)(0x57C50072)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\system_stm32f4xx.o --omf_browse .\system_stm32f4xx.crf --depend .\system_stm32f4xx.d)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x560C185D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
@@ -7,7 +7,7 @@ I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
@@ -34,8 +34,8 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
-F (..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f40xx.s)(0x562673B8)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list .\startup_stm32f40xx.lst --xref -o .\startup_stm32f40xx.o --depend .\startup_stm32f40xx.d)
-F (..\main.c)(0x5926E23B)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+F (..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f40xx.s)(0x562673B8)(--cpu Cortex-M4.fp -g --apcs=interwork -I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 520" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list .\startup_stm32f40xx.lst --xref -o .\startup_stm32f40xx.o --depend .\startup_stm32f40xx.d)
+F (..\Src\main.c)(0x5930E780)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x560C185D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
@@ -43,7 +43,7 @@ I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
@@ -70,11 +70,11 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
-I (..\mfrc522.h)(0x58E88717)
+I (..\Inc\mfrc522.h)(0x5930E21D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
-I (..\my_delay.h)(0x58DE59DA)
-F (..\mfrc522.c)(0x5926E04F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\mfrc522.o --omf_browse .\mfrc522.crf --depend .\mfrc522.d)
-I (..\mfrc522.h)(0x58E88717)
+I (..\Inc\my_delay.h)(0x58DE59DA)
+F (..\Src\mfrc522.c)(0x5930E698)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\mfrc522.o --omf_browse .\mfrc522.crf --depend .\mfrc522.d)
+I (..\Inc\mfrc522.h)(0x5930E21D)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
@@ -83,7 +83,7 @@ I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
@@ -110,8 +110,43 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
-I (..\my_delay.h)(0x58DE59DA)
-F (..\my_printf.c)(0x58DE871F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\my_printf.o --omf_browse .\my_printf.crf --depend .\my_printf.d)
+I (..\Inc\my_delay.h)(0x58DE59DA)
+F (..\Src\my_delay.c)(0x58E0A493)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\my_delay.o --omf_browse .\my_delay.crf --depend .\my_delay.d)
+I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
+I (..\Libraries\CMSIS\Include\core_cm4.h)(0x560C185D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
+I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
+I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
+I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5629066D)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
+I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
+F (..\Src\my_printf.c)(0x58DE871F)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\my_printf.o --omf_browse .\my_printf.crf --depend .\my_printf.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F614C8)
 I (C:\Keil_v5\ARM\ARMCC\include\time.h)(0x57F614C8)
 I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x57F614C8)
@@ -123,7 +158,7 @@ I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
@@ -150,42 +185,7 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
-F (..\my_delay.c)(0x58E0A493)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\my_delay.o --omf_browse .\my_delay.crf --depend .\my_delay.d)
-I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
-I (..\Libraries\CMSIS\Include\core_cm4.h)(0x560C185D)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
-I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
-I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
-I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
-I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5629066D)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
-I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
-F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c)(0x56266E70)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\stm32f4xx_gpio.o --omf_browse .\stm32f4xx_gpio.crf --depend .\stm32f4xx_gpio.d)
+F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c)(0x56266E70)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\stm32f4xx_gpio.o --omf_browse .\stm32f4xx_gpio.crf --depend .\stm32f4xx_gpio.d)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h)(0x56266E81)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x560C185D)
@@ -194,7 +194,7 @@ I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
@@ -220,7 +220,7 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
-F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c)(0x56266E70)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\stm32f4xx_spi.o --omf_browse .\stm32f4xx_spi.crf --depend .\stm32f4xx_spi.d)
+F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c)(0x56266E70)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\stm32f4xx_spi.o --omf_browse .\stm32f4xx_spi.crf --depend .\stm32f4xx_spi.d)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h)(0x56266E81)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x560C185D)
@@ -229,7 +229,7 @@ I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
@@ -255,7 +255,7 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
-F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c)(0x56266E70)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\stm32f4xx_usart.o --omf_browse .\stm32f4xx_usart.crf --depend .\stm32f4xx_usart.d)
+F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c)(0x56266E70)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\stm32f4xx_usart.o --omf_browse .\stm32f4xx_usart.crf --depend .\stm32f4xx_usart.d)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h)(0x56266E81)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x560C185D)
@@ -264,7 +264,7 @@ I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)
@@ -290,7 +290,7 @@ I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h)(0x56266E81)
-F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c)(0x562906E1)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\stm32f4xx_rcc.o --omf_browse .\stm32f4xx_rcc.crf --depend .\stm32f4xx_rcc.d)
+F (..\Libraries\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c)(0x562906E1)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I ..\..\17_RFID -I ..\Libraries\STM32F4xx_StdPeriph_Driver\inc -I ..\Libraries\CMSIS\Device\ST\STM32F4xx\Include -I ..\Libraries\CMSIS\Include -I ..\Inc -I ..\Src-I "C:\Users\nguye\Desktop\mainRFIDproject\17_RFID\keil C\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F407xx -DUSE_STDPERIPH_DRIVER --C99-o .\stm32f4xx_rcc.o --omf_browse .\stm32f4xx_rcc.crf --depend .\stm32f4xx_rcc.d)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h)(0x5629066D)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x57C4FA8E)
 I (..\Libraries\CMSIS\Include\core_cm4.h)(0x560C185D)
@@ -299,7 +299,7 @@ I (..\Libraries\CMSIS\Include\core_cmInstr.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmFunc.h)(0x560C185D)
 I (..\Libraries\CMSIS\Include\core_cmSimd.h)(0x560C185C)
 I (..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x56266E9D)
-I (..\..\17_RFID\stm32f4xx_conf.h)(0x4F85FC6A)
+I (..\Inc\stm32f4xx_conf.h)(0x4F85FC6A)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h)(0x56266E81)
 I (..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h)(0x56266E81)

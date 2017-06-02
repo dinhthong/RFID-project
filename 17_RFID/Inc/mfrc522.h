@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include "stm32f4xx.h"
+#include "stm32f4xx.h" //include for library use
 
 void MF522_init(void);
 unsigned char SPI_transfer(unsigned char data);
@@ -16,7 +16,6 @@ uint8_t MFRC522_Select(uint8_t *pSnr);
 uint8_t MFRC522_AuthState(uint8_t auth_mode,uint8_t addr,uint8_t *pKey,uint8_t *pSnr);     
 uint8_t MFRC522_Read(uint8_t addr,uint8_t *pData);     
 uint8_t MFRC522_Write(uint8_t addr,uint8_t *pData);    
-uint8_t TM_MFRC522_Compare(uint8_t* CardID, uint8_t* CompareID);
 uint8_t MFRC522_Value(uint8_t dd_mode,uint8_t addr,uint8_t *pValue);   
 uint8_t MFRC522_BakValue(uint8_t sourceaddr, uint8_t goaladdr);                                 
 uint8_t MFRC522_Halt(void);
@@ -30,8 +29,6 @@ void MFRC522_WriteRegister(uint8_t Address,uint8_t value);
 uint8_t MFRC522_ReadRegister(uint8_t Address); 
 void SetBitMask(uint8_t reg,uint8_t mask); 
 void ClearBitMask(uint8_t reg,uint8_t mask); 
-
-
 void dumpHex(uint8_t* buffer, int len);
 
 /*********************************************************************************
@@ -81,10 +78,10 @@ void dumpHex(uint8_t* buffer, int len);
 #define     COLLISION_REGISTER          0x0E
 #define     RFU0F                       0x0F
 // PAGE 1     
-#define     RFU10                       0x10
+#define     RFU10                       0x10 //mfrc522 mannual 36/95
 #define     MODE_REGISTER               0x11
 #define     TX_MODE_REGISTER            0x12
-#define     RX_MODE_REGISTER            0x13
+#define     RX_MODE_REGISTER            0x13 //mfrc522 mannual 9.3.2.4
 #define     TX_CONTROL_REGISTER         0x14
 #define     TX_ASK_REGISTER             0x15
 #define     TX_SEL_REGISTER             0x16

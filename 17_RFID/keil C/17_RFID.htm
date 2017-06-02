@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\17_RFID.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\17_RFID.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu May 25 20:55:10 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Fri Jun 02 15:33:45 2017
 <BR><P>
 <H3>Maximum Stack Usage =        160 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -135,8 +135,8 @@ Function Pointers
 Global Symbols
 </H3>
 <P><STRONG><a name="[62]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
-<BR><BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<BR><BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
 <P><STRONG><a name="[63]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
@@ -246,8 +246,8 @@ Global Symbols
 <P><STRONG><a name="[d8]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[64]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
-<BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
 <P><STRONG><a name="[d9]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
@@ -618,6 +618,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
+<P><STRONG><a name="[8a]"></a>CompareID</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CompareID
+</UL>
+<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
 <P><STRONG><a name="[79]"></a>UARTmain_Init</STRONG> (Thumb, 128 bytes, Stack size 32 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = UARTmain_Init &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
@@ -635,9 +641,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = main &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TM_MFRC522_Compare
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
@@ -646,22 +652,22 @@ Global Symbols
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOff
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MF522_init
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTmain_Init
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CompareID
 </UL>
 <BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
 <P><STRONG><a name="[8b]"></a>Read64Block</STRONG> (Thumb, 202 bytes, Stack size 40 bytes, main.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
+<BR><BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Read
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AuthState
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
-<P><STRONG><a name="[80]"></a>MF522_init</STRONG> (Thumb, 226 bytes, Stack size 32 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[80]"></a>MF522_init</STRONG> (Thumb, 218 bytes, Stack size 32 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = MF522_init &rArr; GPIO_PinAFConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
@@ -724,12 +730,6 @@ Global Symbols
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOn
 </UL>
 
-<P><STRONG><a name="[8a]"></a>TM_MFRC522_Compare</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, mfrc522.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TM_MFRC522_Compare
-</UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
 <P><STRONG><a name="[99]"></a>SetBitMask</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SetBitMask &rArr; MFRC522_ReadRegister
 </UL>
@@ -757,7 +757,7 @@ Global Symbols
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOff
 </UL>
 
-<P><STRONG><a name="[9b]"></a>MFRC522_ComMF522</STRONG> (Thumb, 314 bytes, Stack size 48 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[9b]"></a>MFRC522_ComMF522</STRONG> (Thumb, 316 bytes, Stack size 48 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = MFRC522_ComMF522 &rArr; ClearBitMask &rArr; MFRC522_ReadRegister
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
@@ -884,6 +884,25 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
+<P><STRONG><a name="[81]"></a>delay_init</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, my_delay.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[95]"></a>delay_us</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, my_delay.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
+</UL>
+
+<P><STRONG><a name="[82]"></a>delay_ms</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, my_delay.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
 <P><STRONG><a name="[60]"></a>fputc</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, my_printf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = fputc
 </UL>
@@ -908,25 +927,6 @@ Global Symbols
 
 <P><STRONG><a name="[77]"></a>_sys_exit</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, my_printf.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
-</UL>
-
-<P><STRONG><a name="[81]"></a>delay_init</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, my_delay.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[95]"></a>delay_us</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, my_delay.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
-</UL>
-
-<P><STRONG><a name="[82]"></a>delay_ms</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, my_delay.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delay_ms
-</UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-</UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[a6]"></a>GPIO_DeInit</STRONG> (Thumb, 268 bytes, Stack size 8 bytes, stm32f4xx_gpio.o(.text), UNUSED)
