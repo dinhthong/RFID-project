@@ -27,7 +27,25 @@ Project File Date:  06/02/2017
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\17_RFID.axf" - 0 Error(s), 0 Warning(s).
+compiling mfrc522.c...
+..\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h(94): warning:  #1215-D: #warning directive: "dinh nghia STM32F40_41xxx trong file stmf4xx.h"
+  #warning "dinh nghia STM32F40_41xxx trong file stmf4xx.h"
+..\Inc\my_delay.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\mfrc522.c(75): warning:  #177-D: variable "val"  was declared but never referenced
+  	uint32_t val;
+..\Src\mfrc522.c(398): warning:  #550-D: variable "status"  was set but never used
+      uint8_t status;
+..\Src\mfrc522.c(561): warning:  #223-D: function "printf" declared implicitly
+          printf(" ");
+..\Src\mfrc522.c(563): warning:  #223-D: function "printf" declared implicitly
+       printf("%02X \x00", (uint8_t)(*(buffer + i)));
+..\Src\mfrc522.c(559): warning:  #177-D: variable "text"  was declared but never referenced
+       uint8_t text[4];
+..\Src\mfrc522.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=9532 RO-data=488 RW-data=72 ZI-data=1656  
+".\17_RFID.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -45,7 +63,7 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.0.1
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

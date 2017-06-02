@@ -84,11 +84,11 @@ unsigned char SPI_transfer(unsigned char data){
 uint8_t MFRC522_Reset(void)
 {
 	MF522_CS_DISABLE;
-  delay_us(800);
+  delay_us(8000);
 	MF522_RST_RESET;
-  delay_us(100);
+  delay_us(1000);
 	MF522_RST_SET;
-  delay_us(100);
+  delay_us(1000);
   MFRC522_WriteRegister(COMMAND_REGISTER,MFRC522_RESETPHASE);
   delay_us(1000);
     
