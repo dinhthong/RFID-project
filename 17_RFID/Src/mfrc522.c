@@ -84,17 +84,17 @@ unsigned char SPI_transfer(unsigned char data){
 uint8_t MFRC522_Reset(void)
 {
 	MF522_CS_DISABLE;
-  delay_us(8000);
+  delay_us(800);
 	MF522_RST_RESET;
-  delay_us(1000);
+  delay_us(100);
 	MF522_RST_SET;
-  delay_us(1000);
+  delay_us(100);
   MFRC522_WriteRegister(COMMAND_REGISTER,MFRC522_RESETPHASE);
   delay_us(1000);
     
-  MFRC522_WriteRegister(MODE_REGISTER,0x3D);        
+  MFRC522_WriteRegister(MODE_REGISTER,0x29);     
+  MFRC522_WriteRegister(TIMER_RELOAD_H_REGISTER,0);	
   MFRC522_WriteRegister(TIMER_RELOAD_L_REGISTER,30);           
-  MFRC522_WriteRegister(TIMER_RELOAD_H_REGISTER,0);
   MFRC522_WriteRegister(TMODE_REGISTER,0x8D); //Tauto=1; f(Timer) = 6.78MHz/TPreScaler
   MFRC522_WriteRegister(TIMER_PRESCALER_REGISTER,0x3E);
   MFRC522_WriteRegister(TX_ASK_REGISTER,0x40);
@@ -148,10 +148,6 @@ uint8_t MFRC522_Request(uint8_t req_code,uint8_t* pTagType)
        *pTagType     = Buffer[0];
        *(pTagType+1) = Buffer[1];
    }
-   else
-   {   
-       status = MI_ERR;   
-   }
    return status;
 } 
 /*******************************************************************************
@@ -193,7 +189,7 @@ uint8_t MFRC522_Anticoll(uint8_t *pSnr)
     return status;
 }
 /*******************************************************************************
-Noi Dung    :   Chon mot Card de giao tiep
+Noi Dung    :   Select Card to communicate. For instance read data from card
 Tham Bien   :   *pSnr       :    Vung nho luu tru Serial Number Card can giao tiep
 Tra Ve      :   OK          :    Giao tiep thanh cong.
                 NOT_OK      :    Giao tiep that bai.
@@ -437,13 +433,26 @@ void SetBitMask(uint8_t reg,uint8_t mask)
     tmp = MFRC522_ReadRegister(reg);
     MFRC522_WriteRegister(reg,tmp | mask);  // set bit mask
 }
+/*
+@brief Clearing bits without affecting other bits in the MFRC522's internal register.
+@para 
+reg: MFRC522's internal register. 
+mask: specify bits to be cleared.
+
+*/
 void ClearBitMask(uint8_t reg,uint8_t mask)  
 {
     uint8_t tmp = 0x0;
     tmp = MFRC522_ReadRegister(reg);
     MFRC522_WriteRegister(reg, tmp & (~mask));  // clear bit mask
 } 
-uint8_t MFRC522_ComMF522(uint8_t  Command, uint8_t  *pInData, uint8_t  InLenByte,uint8_t  *pOutData, uint16_t *pOutLenBit)
+//to card
+uint8_t MFRC522_ComMF522(
+uint8_t  Command, 
+uint8_t  *pInData, 
+uint8_t  InLenByte,
+uint8_t  *pOutData, 
+uint16_t *pOutLenBit)
 {
     uint8_t status = MI_ERR;
     uint8_t irqEn   = 0x00;

@@ -14,13 +14,9 @@ int main(void)
 		 //cho phep USART2 hoat dong
 		MF522_init();
 		delay_init(168);
-		delay_ms(10);
     MFRC522_Reset();
-		delay_ms(10);
-    MFRC522_AntennaOff(); 
-	  delay_ms(10);
+//    MFRC522_AntennaOff(); 
     MFRC522_AntennaOn();  
-		delay_ms(300);
 		printf("CHUONG TRINH RFID\r\n");
 	 //Read64Block();
 	while(1)

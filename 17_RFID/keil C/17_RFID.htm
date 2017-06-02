@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\17_RFID.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\17_RFID.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Fri Jun 02 15:33:45 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Fri Jun 02 18:21:40 2017
 <BR><P>
 <H3>Maximum Stack Usage =        160 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -618,7 +618,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[8a]"></a>CompareID</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, main.o(.text))
+<P><STRONG><a name="[88]"></a>CompareID</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CompareID
 </UL>
 <BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -637,43 +637,41 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[72]"></a>main</STRONG> (Thumb, 192 bytes, Stack size 16 bytes, main.o(.text))
+<P><STRONG><a name="[72]"></a>main</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = main &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOn
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOff
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOn
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MF522_init
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTmain_Init
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CompareID
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CompareID
 </UL>
 <BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[8b]"></a>Read64Block</STRONG> (Thumb, 202 bytes, Stack size 40 bytes, main.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Read
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AuthState
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
+<P><STRONG><a name="[89]"></a>Read64Block</STRONG> (Thumb, 202 bytes, Stack size 40 bytes, main.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Read
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AuthState
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
 </UL>
 
 <P><STRONG><a name="[80]"></a>MF522_init</STRONG> (Thumb, 218 bytes, Stack size 32 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = MF522_init &rArr; GPIO_PinAFConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_DeInit
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_DeInit
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHB1PeriphClockCmd
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
@@ -681,226 +679,218 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[96]"></a>SPI_transfer</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, mfrc522.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<P><STRONG><a name="[94]"></a>SPI_transfer</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, mfrc522.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
 </UL>
 
-<P><STRONG><a name="[93]"></a>MFRC522_WriteRegister</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[91]"></a>MFRC522_WriteRegister</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MFRC522_WriteRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_transfer
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_transfer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
 </UL>
 
-<P><STRONG><a name="[83]"></a>MFRC522_Reset</STRONG> (Thumb, 118 bytes, Stack size 8 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[82]"></a>MFRC522_Reset</STRONG> (Thumb, 114 bytes, Stack size 8 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = MFRC522_Reset &rArr; MFRC522_WriteRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
 </UL>
 <BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[98]"></a>MFRC522_ReadRegister</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[96]"></a>MFRC522_ReadRegister</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_transfer
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_transfer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AuthState
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOn
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AuthState
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOn
 </UL>
 
-<P><STRONG><a name="[99]"></a>SetBitMask</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[97]"></a>SetBitMask</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SetBitMask &rArr; MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOn
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOn
 </UL>
 
-<P><STRONG><a name="[9a]"></a>ClearBitMask</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[98]"></a>ClearBitMask</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = ClearBitMask &rArr; MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOff
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AntennaOff
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
 </UL>
 
-<P><STRONG><a name="[9b]"></a>MFRC522_ComMF522</STRONG> (Thumb, 316 bytes, Stack size 48 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[99]"></a>MFRC522_ComMF522</STRONG> (Thumb, 316 bytes, Stack size 48 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = MFRC522_ComMF522 &rArr; ClearBitMask &rArr; MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_BakValue
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Value
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Write
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Read
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AuthState
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_BakValue
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Value
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Write
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Request
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Read
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_AuthState
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Anticoll
 </UL>
 
-<P><STRONG><a name="[87]"></a>MFRC522_Request</STRONG> (Thumb, 88 bytes, Stack size 48 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[85]"></a>MFRC522_Request</STRONG> (Thumb, 84 bytes, Stack size 48 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = MFRC522_Request &rArr; MFRC522_ComMF522 &rArr; ClearBitMask &rArr; MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[88]"></a>MFRC522_Anticoll</STRONG> (Thumb, 122 bytes, Stack size 48 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[86]"></a>MFRC522_Anticoll</STRONG> (Thumb, 122 bytes, Stack size 48 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = MFRC522_Anticoll &rArr; MFRC522_ComMF522 &rArr; ClearBitMask &rArr; MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[9c]"></a>CalulateCRC</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[9a]"></a>CalulateCRC</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = CalulateCRC &rArr; ClearBitMask &rArr; MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_BakValue
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Value
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Write
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Read
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
-</UL>
-
-<P><STRONG><a name="[8c]"></a>MFRC522_Select</STRONG> (Thumb, 116 bytes, Stack size 48 bytes, mfrc522.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_BakValue
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Value
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Write
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Select
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Read
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Halt
 </UL>
 
-<P><STRONG><a name="[8d]"></a>MFRC522_AuthState</STRONG> (Thumb, 110 bytes, Stack size 56 bytes, mfrc522.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<P><STRONG><a name="[8a]"></a>MFRC522_Select</STRONG> (Thumb, 116 bytes, Stack size 48 bytes, mfrc522.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
-</UL>
-
-<P><STRONG><a name="[8e]"></a>MFRC522_Read</STRONG> (Thumb, 86 bytes, Stack size 48 bytes, mfrc522.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
 </UL>
 
-<P><STRONG><a name="[9d]"></a>MFRC522_Write</STRONG> (Thumb, 150 bytes, Stack size 48 bytes, mfrc522.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<P><STRONG><a name="[8b]"></a>MFRC522_AuthState</STRONG> (Thumb, 110 bytes, Stack size 56 bytes, mfrc522.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
 </UL>
 
-<P><STRONG><a name="[9e]"></a>MFRC522_Value</STRONG> (Thumb, 208 bytes, Stack size 56 bytes, mfrc522.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<P><STRONG><a name="[8c]"></a>MFRC522_Read</STRONG> (Thumb, 86 bytes, Stack size 48 bytes, mfrc522.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+</UL>
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
 </UL>
 
-<P><STRONG><a name="[9f]"></a>MFRC522_BakValue</STRONG> (Thumb, 202 bytes, Stack size 48 bytes, mfrc522.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<P><STRONG><a name="[9b]"></a>MFRC522_Write</STRONG> (Thumb, 150 bytes, Stack size 48 bytes, mfrc522.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
 </UL>
 
-<P><STRONG><a name="[89]"></a>MFRC522_Halt</STRONG> (Thumb, 52 bytes, Stack size 40 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[9c]"></a>MFRC522_Value</STRONG> (Thumb, 208 bytes, Stack size 56 bytes, mfrc522.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+</UL>
+
+<P><STRONG><a name="[9d]"></a>MFRC522_BakValue</STRONG> (Thumb, 202 bytes, Stack size 48 bytes, mfrc522.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+</UL>
+
+<P><STRONG><a name="[87]"></a>MFRC522_Halt</STRONG> (Thumb, 52 bytes, Stack size 40 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = MFRC522_Halt &rArr; MFRC522_ComMF522 &rArr; ClearBitMask &rArr; MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ComMF522
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[85]"></a>MFRC522_AntennaOn</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, mfrc522.o(.text))
+<P><STRONG><a name="[83]"></a>MFRC522_AntennaOn</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, mfrc522.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = MFRC522_AntennaOn &rArr; SetBitMask &rArr; MFRC522_ReadRegister
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
 </UL>
 <BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[84]"></a>MFRC522_AntennaOff</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, mfrc522.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = MFRC522_AntennaOff &rArr; ClearBitMask &rArr; MFRC522_ReadRegister
-</UL>
-<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
-</UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[9e]"></a>MFRC522_AntennaOff</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, mfrc522.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
 </UL>
 
-<P><STRONG><a name="[a0]"></a>dumpHex</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, mfrc522.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<P><STRONG><a name="[9f]"></a>dumpHex</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, mfrc522.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
 <P><STRONG><a name="[81]"></a>delay_init</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, my_delay.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[95]"></a>delay_us</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, my_delay.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
+<P><STRONG><a name="[93]"></a>delay_us</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, my_delay.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
 </UL>
 
-<P><STRONG><a name="[82]"></a>delay_ms</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, my_delay.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delay_ms
-</UL>
-<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-</UL>
-<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[a0]"></a>delay_ms</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, my_delay.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
 
 <P><STRONG><a name="[60]"></a>fputc</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, my_printf.o(.text))
@@ -952,16 +942,16 @@ Global Symbols
 
 <P><STRONG><a name="[e3]"></a>GPIO_ReadOutputData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(.text), UNUSED)
 
-<P><STRONG><a name="[97]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
+<P><STRONG><a name="[95]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
 </UL>
 
-<P><STRONG><a name="[94]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
+<P><STRONG><a name="[92]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_ReadRegister
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_WriteRegister
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MFRC522_Reset
 </UL>
 
 <P><STRONG><a name="[e4]"></a>GPIO_WriteBit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f4xx_gpio.o(.text), UNUSED)
@@ -977,7 +967,7 @@ Global Symbols
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTmain_Init
 </UL>
 
-<P><STRONG><a name="[90]"></a>SPI_I2S_DeInit</STRONG> (Thumb, 152 bytes, Stack size 8 bytes, stm32f4xx_spi.o(.text))
+<P><STRONG><a name="[8e]"></a>SPI_I2S_DeInit</STRONG> (Thumb, 152 bytes, Stack size 8 bytes, stm32f4xx_spi.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPI_I2S_DeInit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
@@ -986,7 +976,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MF522_init
 </UL>
 
-<P><STRONG><a name="[91]"></a>SPI_Init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, stm32f4xx_spi.o(.text))
+<P><STRONG><a name="[8f]"></a>SPI_Init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, stm32f4xx_spi.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPI_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MF522_init
@@ -998,7 +988,7 @@ Global Symbols
 
 <P><STRONG><a name="[e9]"></a>I2S_StructInit</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f4xx_spi.o(.text), UNUSED)
 
-<P><STRONG><a name="[92]"></a>SPI_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_spi.o(.text))
+<P><STRONG><a name="[90]"></a>SPI_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f4xx_spi.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MF522_init
 </UL>
 
@@ -1205,7 +1195,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTmain_Init
 </UL>
 
-<P><STRONG><a name="[8f]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
+<P><STRONG><a name="[8d]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MF522_init
 </UL>
 
@@ -1219,12 +1209,12 @@ Global Symbols
 
 <P><STRONG><a name="[a9]"></a>RCC_APB1PeriphResetCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_DeInit
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_DeInit
 </UL>
 
 <P><STRONG><a name="[a8]"></a>RCC_APB2PeriphResetCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_DeInit
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_I2S_DeInit
 </UL>
 
 <P><STRONG><a name="[136]"></a>RCC_AHB1PeriphClockLPModeCmd</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, stm32f4xx_rcc.o(.text), UNUSED)
@@ -1251,14 +1241,14 @@ Global Symbols
 
 <P><STRONG><a name="[141]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[86]"></a>__2printf</STRONG> (Thumb, 20 bytes, Stack size 24 bytes, noretval__2printf.o(.text))
+<P><STRONG><a name="[84]"></a>__2printf</STRONG> (Thumb, 20 bytes, Stack size 24 bytes, noretval__2printf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
 <LI>Call Chain = __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dumpHex
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
+<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dumpHex
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read64Block
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1325,7 +1315,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ferror
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
-<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
 <P><STRONG><a name="[b5]"></a>_printf_char_common</STRONG> (Thumb, 32 bytes, Stack size 64 bytes, _printf_char_common.o(.text))
