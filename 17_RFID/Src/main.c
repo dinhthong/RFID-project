@@ -49,8 +49,8 @@ int main(void)
 			{
 				printf(" Card is NOT correct\n");
 			}
-		//	printf("Read 64 sector\r\n");
-     //  Read64Block();			
+			printf("Read 64 sector\r\n");
+       Read64Block();			
 	}
 }
 uint8_t CompareID(uint8_t* CardID, uint8_t* CompareID) 
@@ -84,8 +84,7 @@ void Read64Block( void)
          status = MFRC522_AuthState(PICC_AUTHENT1A, k, defaultKeyA,serNum);
          if (status != MI_OK) continue;
 /*----------------------------------------------------*/	
-        if((k%4) == 3	)			printf("block  %d ( trailer) \r\n", k);
-				else printf("block %d\r\n", k);	
+         printf("block %d\r\n", k);	
 				 status = MFRC522_Read(k, readdata);
                 if (status == MI_OK)
                 {
@@ -94,14 +93,15 @@ void Read64Block( void)
                   {                  
 									printf("%x ",readdata[p]);
                   } 
+									/*
                   printf("\r\nsymbol= ");	    								
-                   /*for(p=0; p<16; p++)
+                   for(p=0; p<16; p++)
                   {                  
 										printf("%c",readdata[p]);
-                  } 	*/
+                  } 	
+									*/
                   printf("\r\n\r\n");									        
                   MFRC522_Halt();
-								//delay_ms(500);
               }
        }
 }
